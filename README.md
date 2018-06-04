@@ -18,6 +18,5 @@
   + IExcelServise – представляет собой интерфейс для вывода конечных координат положения манипулятора в файл Excel.
   + ISplineServise – представляет собой интерфейс для задания кривых Безье (2-го) порядка и задание трапецеидального закона движения .
 ## Пример работы 
-Пример работы с данным ПО:
-
-Модель использующая выходной xls файл данного ПО:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YYzeGKxgiII" target="_blank"><img src="http://img.youtube.com/vi/YYzeGKxgiII/0.jpg" 
+alt="Модель использующая выходной xls файл данного ПО:" width="240" height="180" border="1" /></a>
