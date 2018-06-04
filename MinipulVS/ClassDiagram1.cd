@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MinipulVS.Controller">
+    <Position X="5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAABAAAAAAIAAQRAAABAIAAAAAQAACAQAAmAAQAAAA=</HashCode>
+      <FileName>Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MinipulVS.Main">
+    <Position X="2" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>8IAABAlFAGEAFBEBgFDAAAgLkIRAAE4iAIABEMBBBAA=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="MinipulVS.IFormView">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAABAAAAAAARAAAAAAAABEIAAAAA=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MinipulVS.IClusterServise">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAIAAAAAAAAgAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClusterServise.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MinipulVS.ICommandServise">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAAAAAAAAAAAAAAAAABAAAIAQAAAAAAAA=</HashCode>
+      <FileName>CommandServise.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MinipulVS.IExcelServise">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExcelServise.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MinipulVS.IGraphServise">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraphServise.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MinipulVS.IImageProccesingServise">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABACAAAAAAAAQAAAAAAAAAAAAIAAAAQAAAAACBA=</HashCode>
+      <FileName>ImageProcessingService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MinipulVS.IInterpritateServise">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterpritateServise.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MinipulVS.ISplineServise">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>SplineServise.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MinipulVS.IStateStorageService">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAwACAACEAAEIAAACAIAAIAAAA=</HashCode>
+      <FileName>StateStorageService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
