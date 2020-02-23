@@ -1,23 +1,23 @@
-# Модель СТЗ для модели манипулятора Kuka
-Данное ПО решает задачу планирования плавного движения для манипулятора Кuka. Для решения задачи планирования движения используется модель компьютерного зрения, которая получает на вход изображение, содержащее желаемые траектории движения, и после обработки система выдает xls файл с координатами для движения манипулятора.
-## Базовые функции
-+ Реализует:
-  + Выделение контрольных точек объектов на изображении методом детектора Харриса.
-  + Решает задачу классификации для каждого отдельного обьекта, т.е множество контрольных точек относятся только к одному объекту изображения.
-  + Обход контрольных точек объекта по определенному маршруту.
-  + Из полученного маршрута строятся желаемая траектория для движения по линейному участку, или движение по криволинейному участку. Плавное движение задается трапецеидальным законом движения.
-  + На выход будет подан файл формата xls, содержащий координаты для движения рабочего органа манипулятора.
-## Интерфейсы
-Реализован паттерн MVC.
-Программная модель состоит из:
-  + ImageProccesingServise - представляет собой интерфейс для обработки изображения методами СТЗ. В рамках данного модуля решается задача нахождения контрольных точек с помощью детектора Харриса, получения массива контрольных точек.
-  + IStateStorageService – представляет собой интерфейс для хранения промежуточных результатов обработки.
-  + IClusterServise – представляет собой интерфейс для обработки полученных контрольных точек и классификации их для каждого объекта изображения методом кластеризации.
-  + IMessageServise – представляет собой интерфейс для обработки ошибок
-  + IGraphServise – представляет собой интерфейс для решения задачи обхода контрольных точек в нужной последовательности. Реализует метод создания матрицы смежности для контрольных точек, метод создания очередности обхода объекта по контрольным точкам. 
-  + IInterpritateServise – представляет собой интерфейс основных команд для манипулятора, как: поднятие, опускания пера в начальных и конечных точках манипулятора, расчет траектории перемежения по кривым Безье.
-  + IExcelServise – представляет собой интерфейс для вывода конечных координат положения манипулятора в файл Excel.
-  + ISplineServise – представляет собой интерфейс для задания кривых Безье (2-го) порядка и задание трапецеидального закона движения .
-## Пример работы 
+# CVS for the KUKA manipulator model
+This SOFTWARE solves the problem of planning smooth movement for the KUKA manipulator. To solve the problem of motion planning, a computer vision model is used, which receives an input image containing the desired motion paths, and after processing, the system issues an xls file with coordinates for the movement of the manipulator.
+## Basic function
++ Realizes:
+  + Selection of control points of objects in the image using the Harris detector method.
+  + Solves the classification problem for each individual object, i.e. a set of control points relate only to one image object.
+  + Bypassing the control points of the object along a specific route.
+  + From the resulting route, the desired trajectory for moving along a linear section, or moving along a curved section, is plotted. Smooth motion is defined by the trapezoidal law of motion.
+  + An xls file containing coordinates for the movement of the manipulator's working body will be submitted to the output.
+## Interfaces
+The MVC pattern is implemented.
+The software model consists of:
+  + Imageproccesingservice - is an interface for processing images using STZ methods. This module solves the problem of finding control points using the Harris detector and obtaining an array of control points.
+  + IStateStorageService - is an interface for storing intermediate processing results.
+  + IClusterServise - provides an interface for processing the received control points and classifying them for each image object using the clustering method.
+  + IMessageServise-provides an interface for error handling
+  + Igraphservice - is an interface for solving the problem of traversing control points in the desired sequence. Implements a method for creating an adjacency matrix for control points, a method for creating a priority for traversing an object by control points. 
+  + IInterpritateServise - is an interface for basic commands for the manipulator, such as raising and lowering the pen at the beginning and end points of the manipulator, calculating the path of interleaving on Bezier curves.
+  + IExcelServise - is an interface for displaying the final coordinates of the manipulator's position in an Excel file.
+  + ISplineServise - is an interface for setting Bezier (2nd) order curves and setting the trapezoidal law of motion .
+## Example of work 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YYzeGKxgiII" target="_blank"><img src="http://img.youtube.com/vi/YYzeGKxgiII/0.jpg" 
-alt="Модель использующая выходной xls файл данного ПО:" width="240" height="180" border="1" /></a>
+alt="Модель использующая выходной xls файл данного ПО:" width="240" height="180" border="1"/></a>
