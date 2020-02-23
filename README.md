@@ -10,7 +10,7 @@ This SOFTWARE solves the problem of planning smooth movement for the KUKA manipu
 ## Interfaces
 The MVC pattern is implemented.
 The software model consists of:
-  + Imageproccesingservice - is an interface for processing images using STZ methods. This module solves the problem of finding control points using the Harris detector and obtaining an array of control points.
+  + Imageproccesingservice - is an interface for processing images using CVS methods. This module solves the problem of finding control points using the Harris detector and obtaining an array of control points.
   + IStateStorageService - is an interface for storing intermediate processing results.
   + IClusterServise - provides an interface for processing the received control points and classifying them for each image object using the clustering method.
   + IMessageServise-provides an interface for error handling
